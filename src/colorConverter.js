@@ -25,11 +25,5 @@ module.exports = {
         const y = yValue / (xValue + yValue + zValue)
 
         return [x.toFixed(3), y.toFixed(3)];
-    },
-
-    main: function(r, g, b) {
-        this.convert(r, g, b);
     }
 }
-
-main(255, 6, 1423);

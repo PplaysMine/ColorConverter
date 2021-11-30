@@ -1,10 +1,13 @@
-const { assert } = require("console");
-
 module.exports = {
     convert: function(red, green, blue) {
-        assert(0 <= red <= 255);
-        assert(0 <= green <= 255);
-        assert(0 <= blue <= 255);
+
+        function checkValue(value) {
+            if(value < 0 || value > 255) throw "The values should be between 0 and 255.";
+        }
+
+        checkValue(red);
+        checkValue(blue);
+        checkValue(green);
 
         red /= 255;
         green /= 255;

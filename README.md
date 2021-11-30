@@ -1,6 +1,9 @@
 # ColorConverter in JS
 Converts rgb values to gamut values.<br>
-Used for the philips hue system
+Used by the philips hue system:
+
+<img src="color.png" style="width: 400px"><br>
+This converter is able to convert rgb values to all three gamuts as seen in the image
 
 # Usage
 Import the color converter...<br>
